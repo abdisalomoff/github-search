@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 1280px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-items: center;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    background-color: #1c2128;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto 10px;
+}
+
+
+.form label {
+    position: relative;
+}
+
+.form label::before {
+    position: absolute;
+    background-image: url("./../image/search-icon.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 20px;
+    top: 18px;
+    left: 16px;
+    right: 0px;
+    bottom: 0px;
+    content: "";
+}
+
+.form label input {
+    width: 100%;
+    display: block;
+    background-color: #23334b;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 50px 15px;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(188, 192, 215, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+    cursor: text;
+}
+
+.form label input::placeholder {
+    color: #bbb;
+    margin-left: 100px;
+}
+
+.form label input {
+    outline: none;
+}
+
+.card {
+    width: 100%;
+    max-width: 605px;
+    background-color: #23334b;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 40px;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 10px solid #2a2a72;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+
+.user-info h2 {
+    margin-bottom: 10px;
+}
+
+.user-info div {
+    margin-top: 10px;
+}
+
+.to-github {
+    position: relative;
+    padding-right: 20px;
+}
+
+.to-github:active {
+    color: #1f7bdb;
+}
+
+.to-github::before {
+    position: absolute;
+    background-image: url("./../image/external-link.png");
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 110px;
+    right: 0px;
+    bottom: 0px;
+    content: "";
+}
+
+.repo {
+    text-decoration: none;
+    color: #fff;
+    background-color: #212a72;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.error-message {
+    margin: 60px auto 0px;
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        max-width: 400px;
+    }
+}
